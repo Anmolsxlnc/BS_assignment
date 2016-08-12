@@ -1,0 +1,447 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+#features {
+	text-align: center;
+}
+
+#features img {
+	margin: 0 0 20px;
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+footer {
+	background: black;;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	background-color: #1a1a1a;
+}
+.nav .caret{
+	border-top-color:#f8e600;
+	border-bottom-color: #f8e600;
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#navigation{
+
+	background-color: black;
+}
+#searchInput {
+	width: 200px;
+}
+.nav-collapse{
+	padding-top: 20px;
+
+}
+navbar-brand img{
+	width:50px;
+	height: 50px;
+
+
+}
+
+
+/* --------------------------------------
+   JumboTron
+
+
+   -------------------------------------- */
+
+		 .jumbotron{
+			margin-top: 120px;
+		background-image: url("../../images/jumbo.jpg")   ;
+ background-repeat: no-repeat;
+			background-color: #1e1e1e;
+		 border-color: #f8e600;
+		 border-style: groove;
+
+			-webkit-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+		 -moz-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+		 box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+			font-size: 12px;
+		 		color:white;
+		 }
+
+		 #jumbotext{
+			 margin-top: 120px;
+		 }
+#findgym{
+margin-top: 120px;
+	background-color: #1e1e1e;
+ border-color: #f8e600;
+ border-style: groove;
+ border-width:medium;
+ -webkit-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+-moz-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+
+}
+
+div.thumbnail{
+
+	background-color: #1e1e1e;
+ border-color: #f8e600;
+ border-style: groove;
+ border-width:medium;
+ -webkit-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+-moz-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+
+}
+
+div.panel p{
+	color:#999;
+}
+div.panel{
+	background-color: #1e1e1e;
+ border-color: #f8e600;
+
+ border-width:medium;
+ -webkit-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+-moz-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+
+}
+div.panel-heading{
+	background-color:#f8e600;
+}
+
+.panel-primary .panel-heading{
+	background-color:#f8e600;
+	color:black;
+	text-align: center;
+
+}
+.panel-primary{
+	height: 316px;
+}
+
+label{
+	color:white;
+}
+h3 label{
+	color:#f8e600;
+}
+#find{
+	margin-top: 24px;
+}
+
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-top: 40px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+	font-family: sans-serif;;
+	color:#f8e600;
+}
+.carousel-caption p {
+	font-family: sans-serif;
+	color:#f8e600;
+}
+
+#myCarousel .item { height: 400px; }
+
+#slide1 {
+	background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+p.lead{
+	color:#f8e600;
+}
+#exampleInputEmail2{
+	width:30%;
+}
+#imin{
+	margin-left: 20px;
+	padding: 8 20;
+}
+#italics{
+	font-size: 14px;
+	color:grey;
+}
+
+div.modal-header, div.modal-body{
+	color:black;
+}
+#featuresHeading{
+	color:#f8e600;
+
+}
+label.col-lg-2.control-label{
+		text-align: left;
+		color:black;
+}
+
+.well,.carousel{
+	background-color: #1e1e1e;
+ border-color: #f8e600;
+ border-style: groove;
+
+	-webkit-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+ -moz-box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+ box-shadow: 0px 0px 99px -2px rgba(248,230,0,0.23);
+	font-size: 12px;
+		color:#f8e600;
+
+	border:1px solid #f8e600;
+	margin: 20px 0;
+}
+.page-header{
+	border-bottom-color: #f8e600;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #f8e600;
+    margin: 2em 0;
+    padding: 0;
+}
+#signupbutton{
+	margin-top :10px;
+}
+#shopheading{
+	color:#f8e600;
+}
+div.caption h3{
+	color:#f8e600;
+	border: 1px #f8e600;
+	padding-bottom: 4px;
+border-style: none none solid none;
+}
+div.caption p{
+	color:#999;
+}
+.well  h2{
+	font-family: sans-serif;
+	margin: 3px 5px;
+}
+.well.title1{
+	margin: 10px auto;
+		padding: 5px 10px;
+}
+.tabbable img.thumbnail {
+	margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 1000px) {
+ul.nav{
+	padding-left:0;
+}
+
+}
+
+@media (max-width: 480px) {
+	.navbar-brand img {
+		margin-right: -20px;
+		height: 30px;
+		width: auto;
+
+	}
+	.jumbotron{
+	 margin-top: 120px;
+ background-image: url("../../images/jumbo_small.jpg")   ;
+ }
+ #search{
+	 content: none;
+ }
+
+	.thumbnail .price {
+		font-size: 14px;
+	}
+
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+
+}
+@media (max-width: 992px) {
+	#findgym{
+	margin-top: 40px;
+}
+}
+@media (max-width: 1200px) {
+	.jumbotron{
+
+ background-image: url("../../images/jumbo_med.jpg")   ;
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.navbar-brand img {
+
+		height: 50px;
+		width: auto;
+
+	}
+
+
+  #search{
+ 	 content: none;
+  }
+	.jumbotron{
+
+ background-image: url("../../images/jumbo_med.jpg")   ;
+ }
+
+	#myCarousel .item { height: 310px; }
+
+	#slide1 {
+		background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+	}
+
+	#slide3 {
+		background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+	}
+
+	.carousel-caption {
+		font-size: 16px;
+	}
+
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+
+	#slide1 {
+		background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+	}
+
+	#slide3 {
+		background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+	}
+
+}

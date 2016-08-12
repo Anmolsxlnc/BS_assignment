@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Code a Responsive Website with Twitter Bootstrap 3</title>
+		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="includes/css/styles.css">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+		<div class="container" id="main">
+
+			<div class="navbar-inverse navbar-fixed-top "id="navigation" >
+				<div class="container"	id="navigation">
+
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle pull-left" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand " href="/"><img src="images/logo.png" alt="Your Logo"></a>
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+
+						<ul class="nav navbar-nav pull-left">
+
+							<li class="dropdown-inverse">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Store <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">Shop</li>
+
+									<li>
+										<a href="#">Category</a>
+									</li>
+
+									<li>
+										<a href="#">Brand</a>
+									</li>
+									<li>
+										<a href="#">Ingredient</a>
+									</li>
+
+									<li>
+										<a href="#">Goals</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li class="dropdown-header">Shop by Popularity</li>
+
+									<li>
+										<a href="#">Whey-protien</a>
+									</li>
+
+									<li>
+										<a href="#">Pre-Workout</a>
+									</li>
+									<li>
+										<a href="#">Fat-loss</a>
+									</li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+							<li class="dropdown-inverse">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Training <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+									<li class="dropdown-header">Weight-Loss</li>
+
+									<li>
+										<a href="#">Build Muscle</a>
+									</li>
+
+									<li>
+										<a href="#">Workouts</a>
+									</li>
+									<li>
+										<a href="#">Exercises</a>
+									</li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+
+							<li class="dropdown-inverse">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
+						<form id="search"class="navbar-form  pull-right">
+							<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- end navbar-form -->
+
+
+					</div><!-- end nav-collapse -->
+
+				</div><!-- end container -->
+			</div><!-- end navbar -->
+			<div class="row" id="jumbo">
+				<div class="col-xs-12  col-md-8 col-lg-8">
+			<div class="jumbotron ">
+
+  <p id="jumbotext">Start your total fitness experience today with Gold's Gym!<br>
+Use the search form to the right to find your nearest Gold's Gym.</p>
+  <p><a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">SIGN UP <span class="glyphicon glyphicon-user"><sup>+</sup> </a></p>
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button class="close" data-dismiss="modal">&times;</button>
+
+						<h4 class="modal-title">Enter your Information</h4>
+					</div><!-- end modal-header -->
+					<div class="modal-body">
+
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="inputName">Name</label>
+								<div class="col-lg-10">
+									<input class="form-control" id="inputName" placeholder="Name" type="text">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+								<div class="col-lg-10">
+									<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-lg-2 control-label" for="inputMessage">Password</label>
+								<div class="col-lg-10">
+								<input class="form-control" id="inputEmail" placeholder="Password" type="password">
+									<button class="btn btn-success pull-right" id="signupbutton"type="submit">Sign-up</button>
+								</div>
+							</div>
+						</form>
+					</div><!-- end modal-body -->
+
+					<div class="modal-footer">
+						<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+					</div><!-- end modal-footer -->
+				</div><!-- end modal-content -->
+			</div><!-- end modal-dialog -->
+		</div><!-- end myModal -->
+</div>
+</div>
+	<div class="col-xs-12 col-md-4 col-lg-4">
+
+		<div class="panel panel-primary" id="findgym">
+			<div class="panel-heading"><h4><span class="glyphicon glyphicon-search"> Find your Fitness Plan</h4></div>
+  <div class="panel-body">
+		<form>
+		  <div class="form-group">
+
+		    <h3><label for="exampleInputEmail1" >Select Gender :</label></h3>
+
+				<label class="radio-inline">
+	  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Male
+	</label>
+	<label class="radio-inline">
+	  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Female
+	</label>
+		  </div>
+			<div class="form-group">
+
+				<h3><label for="exampleInputEmail1" >Select your Goal:</label></h3>
+
+				<label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox2" value="option2"> Fat-Loss
+		</label>
+		<label class="checkbox-inline">
+		  <input type="checkbox" id="inlineCheckbox3" value="option3"> Gain-Muscle
+		</label>
+			</div>
+
+
+  <button type="button"  id="find" class="btn btn-warning btn-lg btn-block"> Submit</button>
+		</form>
+
+  </div>
+		</div>
+</div>
+</div>
+<div class="well title1"><h2>Get Stronger at Gold's Gym</h2></div>
+
+			<div class="carousel slide" id="myCarousel">
+
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>Train to Transform</h4>
+							<p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>Exciting offers for Female Trainers!</h4>
+							<p>Exciting membership programs for female customers and trainers, special discount on membership.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4> </h4>
+							<p>Vote for your favourite products, brands, world-class trainers and much more.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+				</div><!-- carousel-inner -->
+
+				<!-- Controls -->
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+
+			</div><!-- end myCarousel -->
+<br>
+
+			<div class="row" id="bigCallout" class="welll">
+				<div class="col-12">
+
+					<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+
+						<h4>Success!</h4>
+						<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+					</div><!-- end alert -->
+
+					<!-- Visible only on small devices -->
+					<div class="well well-small visible-sm">
+						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+					</div><!-- end well-small -->
+
+					<div class="well">
+						<div class="page-header">
+							<h1>Get Exclusive content <small>Subscribe our newsletter !</small></h1>
+						</div><!-- end page-header -->
+
+						<p class="lead">
+Receive exciting features, news & special offers.<br>
+<i id="italics">By clicking "I'm in." you agree to receive emails from Bodybuilding.com
+You can unsubscribe at any time.</i>
+</p>
+						<form class="form-inline">
+
+<div class="form-group">
+
+	<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter your email">
+	<button type="submit" id="imin" class="btn btn-md btn-warning">I'M IN</button>
+
+
+</div>
+</form>
+
+					</div><!-- end well -->
+
+				</div><!-- end col-12 -->
+			</div><!-- end bigCallout -->
+
+
+			<div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>WE'RE HERE TO HELP YOU GROW.</h2>
+					<p class="lead">No matter your goal, we have a complete fitness plan for you!</p>
+				</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+
+
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Burn Fat</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/fap-icons-big-burn-fat.png" alt="HTML5" class="img-circle">
+
+						<p>Better results in less time. What's not to love about HIIT training? Melt fat fast with this scientifically proven blubber-burning program!</p>
+
+						<a href="#" target="_blank" class="btn btn-warning btn-block">Get the fat burning</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Buil Muscle</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/fap-icons-big-build-muscle.png" alt="CSS3" class="img-circle">
+
+						<p>For anyone looking to pack on some serious muscle mass, one of the top priorities will be to determine what the best bodybuilding workout to follow is. </p>
+
+						<a href="" target="_blank" class="btn btn-warning btn-block">Start building muscle</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Transform</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/fap-icons-big-transform.png" alt="Bootstrap 3" class="img-circle">
+
+						<p>S0...did you transform your body last year? Or did you swap your bag of motivation for a bag of chips? Don't beat yourself up if you did the latter. .</p>
+
+						<a href="#" target="_blank" class="btn btn-warning btn-block">More Bootstrap</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+
+
+			<hr >
+
+			<div class="row" id="moreCourses">
+				<div class="col-12">
+					<h2 id="shopheading">Gold's Gear</h2>
+					<div class="thumbnails row">
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/item_psd2html5.jpg" alt="PSD to HTML5 & CSS3">
+
+								<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>5</div>
+
+								<div class="caption">
+									<h3>APPAREL AND MERCHANDISE</h3>
+
+									<p>Show how strong you are, everywhere you are.</p>
+
+									<p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">Shop now</a> <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/item_webhosting101.jpg" alt="Web Hosting 101">
+
+								<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span> Free</div>
+
+								<div class="caption">
+									<h3>FITNESS EQUIPMENT</h3>
+
+									<p>Bring strength right to your home with Gold's Gym personal fitness equipment.</p>
+
+									<p><a href="https://www.udemy.com/web-hosting-101/" class="btn btn-primary btn-small" target="_blank">Shop</a> <a href="https://www.udemy.com/web-hosting-101/" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+					</div><!-- end row -->
+				</div><!-- end col-12 -->
+			</div><!-- end moreCourses -->
+		</div><!-- end container -->
+
+		<footer>
+			<div class="container" >
+				<div class="row">
+					<div class="col-sm-2">
+					<h5>Copyright &copy; 2013 Gold's Gym</h5>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h5>Navigation</h5>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+
+					</div><!-- end col-sm-4 -->
+
+					<div class="col-sm-2">
+						<h5>Navigation</h5>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h5>Follow Us</h5>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h5>Coded with <span class="glyphicon glyphicon-heart"></span> by Anmol</h5>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+	</body>
+</html>
